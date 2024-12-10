@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(255, 246, 234);
+}
+
+.navbar {
+    border-bottom: 1px solid gray;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1abc9c;
+}
+
+.nav-link {
+    color: #000;
+}
+
+.nav-link:hover {
+    color: #1abc9c;
+}
+
+.btn-register {
+    color: white;
+    background-color: #1abc9c;
+    border: none;
+}
+
+.btn-login {
+    color: #1abc9c;
+}
+
+.btn-login:hover {
+    border: 1px solid #1abc9c;
+    color: #1abc9c;
+}
+
+.btn-register:hover {
+    background-color: #115043;
+    color: white;
+}
