@@ -52,6 +52,7 @@ body {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
+    color: black;
 }
 
 .notificacoes-inteligentes span {
@@ -87,4 +88,31 @@ body {
 .btn-outline-secondary:hover {
     background-color: #1abc9c;
     color: #fff;
+}
+
+/*Como funciona*/
+
+.como-funciona h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+.como-funciona p {
+    font-size: 1.5rem;
+}
+
+.como-funciona span {
+    font-weight: bold;
+}
+
+.como-funciona .btn-teste-gratuito {
+    background-color: #1abc9c;
+    color: #fff;
+}
+
+.btn-teste-gratuito:hover {
+    background-color: #115043;
+    color: white;
 }
