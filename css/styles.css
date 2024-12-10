@@ -2,8 +2,10 @@ body {
     background-color: rgb(255, 246, 234);
 }
 
+/*Navbar*/
 .navbar {
     border-bottom: 1px solid gray;
+    background-color: rgb(255, 246, 234);
 }
 
 .navbar-brand {
@@ -38,4 +40,51 @@ body {
 .btn-register:hover {
     background-color: #115043;
     color: white;
+}
+
+/*Notificacoes inteligentes*/
+.notificacoes-inteligentes {
+    background-color: #f8f6f2;
+    color: #333;
+}
+
+.notificacoes-inteligentes h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.notificacoes-inteligentes span {
+    color: #1abc9c;
+    border-bottom: 2px solid #1abc9c;
+}
+
+/* Container das imagens */
+.images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+/* Botões */
+.btn-primary {
+    background-color: #1abc9c;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #16a085;
+}
+
+.btn-outline-secondary {
+    border: none;
+    color: #000000;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #1abc9c;
+    color: #fff;
 }
