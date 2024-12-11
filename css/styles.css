@@ -116,3 +116,58 @@ body {
     background-color: #115043;
     color: white;
 }
+
+/*Entenda melhor*/
+
+.entenda-melhor {
+    background-color: #1f1f1f;
+}
+
+.entenda-melhor h1,
+h4,
+p {
+    color: white;
+    text-align: center;
+}
+
+.entenda-melhor h6 {
+    color: white;
+    display: inline-block;
+    border-bottom: 1px solid green;
+    padding-bottom: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.entenda-melhor h4 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: justify;
+    max-width: 500px;
+}
+
+.entenda-melhor p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: justify;
+    max-width: 500px;
+}
+
+.entenda-melhor span {
+    font-weight: bold;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 12px;
+    height: 12px;
+    background: #ddd;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background: #00ff00;
+    /* Cor ativa */
+}
