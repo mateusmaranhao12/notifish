@@ -282,3 +282,22 @@ p {
     margin-bottom: 1rem;
     text-align: justify;
 }
+
+/*Footer*/
+
+footer .list-unstyled {
+    color: rgb(173, 173, 173);
+}
+
+footer a {
+    color: rgb(173, 173, 173);
+}
+
+.bg-footer {
+    background-color: #343a40; /* Fundo escuro combinando com o footer */
+    color: white; /* Cor do texto */
+    width: 100%; /* Garante que o fundo ocupe toda a largura */
+    padding: 10px 0; /* Espaçamento interno */
+    position: relative; /* Mantém o comportamento padrão */
+    left: 0;
+}
