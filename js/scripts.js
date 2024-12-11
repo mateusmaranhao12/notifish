@@ -14,6 +14,7 @@ $(document).ready(function () {
 // Obter os botões e elementos de preço
 const btnAnual = document.getElementById('btn-anual')
 const btnMensal = document.getElementById('btn-mensal')
+const btnEconomize = document.getElementById('btnEconomize')
 
 // Obter elementos de preço e período
 const precoBasico = document.getElementById('preco-básico')
@@ -22,7 +23,6 @@ const periodoBasico = document.getElementById('periodo-básico')
 const periodoPremium = document.getElementById('periodo-premium')
 
 // Obter os botões e elementos de preço para o CRM
-const btnEconomize = document.getElementById('btnEconomize')
 const btnPlanoAnual = document.getElementById('btnPlanoAnual')
 const btnPlanoMensal = document.getElementById('btnPlanoMensal')
 
@@ -40,18 +40,35 @@ function alterarParaAnual() {
     // Atualizar o texto do período
     periodoBasico.innerText = 'Anual'
     periodoPremium.innerText = 'Anual'
+
+    // Remover botão Economize 20% quando no plano anual
+    btnEconomize.style.display = 'none'
 }
 
-// Função para alterar para o plano mensal
+// Função para alterar para o plano mensal com desconto
 function alterarParaMensal() {
-    // Atualizar preços para plano mensal
-    precoBasico.innerHTML = "R$ 111,49<span class='fs-6'>/mês</span>"
-    precoPremium.innerHTML = "R$ 199,99<span class='fs-6'>/mês</span>"
+    // Atualizar preços para plano mensal com 20% de desconto
+    const precoBasicoMensal = 111.49
+    const precoPremiumMensal = 199.99
+
+    const precoBasicoDesconto = (precoBasicoMensal * 0.8).toFixed(2)
+    const precoPremiumDesconto = (precoPremiumMensal * 0.8).toFixed(2)
+
+    precoBasico.innerHTML = `R$ ${precoBasicoDesconto}<span class='fs-6'>/mês</span>`
+    precoPremium.innerHTML = `R$ ${precoPremiumDesconto}<span class='fs-6'>/mês</span>`
 
     // Atualizar o texto do período
     periodoBasico.innerText = 'Mensal'
     periodoPremium.innerText = 'Mensal'
+
+    // Exibir botão Economize 20%
+    btnEconomize.style.display = 'block'
 }
+
+// Inicializar o plano como anual ao carregar a página
+window.addEventListener('load', () => {
+    alterarParaAnual()
+})
 
 // Função para atualizar para o plano anual
 function alterarParaAnualCRM() {
@@ -65,6 +82,17 @@ function alterarParaMensalCRM() {
     precoBasicoCRM.innerHTML = "R$ 312,50<span class='fs-6'>/mês</span>"
     precoIntermediario.innerHTML = "R$ 562,50<span class='fs-6'>/mês</span>"
     precoEmpresarial.innerHTML = "R$ 887,50<span class='fs-6'>/mês</span>"
+}
+
+// Definir plano inicial para Anual
+window.onload = () => {
+    alterarParaAnualCRM() // Define o plano como anual ao carregar a página
+
+    // Evento de clique para alterar para o plano Anual
+    document.getElementById('btnPlanoAnual').addEventListener('click', alterarParaAnualCRM)
+
+    // Evento de clique para alterar para o plano Mensal
+    document.getElementById('btnPlanoMensal').addEventListener('click', alterarParaMensalCRM)
 }
 
 // Adicionar eventos aos botões
