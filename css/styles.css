@@ -230,3 +230,55 @@ p {
         max-width: 100%;
     }
 }
+
+/*Planos*/
+
+.planos {
+    background-color: #0b1123;
+}
+
+.planos .card-title, .card-subtitle, .list-unstyled, .preco {
+    color: #fff5e7;
+}
+
+.planos .text-success {
+    text-decoration: none;
+}
+
+.planos .card-title, .card-subtitle {
+    text-align: start;
+}
+
+/*crm*/
+.crm {
+    background-color: #292929;
+}
+
+.crm .card {
+    background-color: #000;
+}
+
+.crm h2, p, .card-title, .card-text, h3 {
+    color: #fff5e7;
+}
+
+/*FAQ*/
+
+.faq h1 {
+    color: black;
+    text-align: center;
+}
+
+.faq .colunas {
+    padding: 20px;
+    border-top: 1px solid gray;
+}
+
+.faq .p-faq {
+    border-radius: 10px;
+    background-color: #fff6ee;
+    padding: 10px;
+    color: black;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
