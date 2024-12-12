@@ -45,17 +45,15 @@ function alterarParaAnual() {
     btnEconomize.style.display = 'none'
 }
 
-// Função para alterar para o plano mensal com desconto
+// Função para alterar para o plano mensal
 function alterarParaMensal() {
-    // Atualizar preços para plano mensal com 20% de desconto
-    const precoBasicoMensal = 111.49
-    const precoPremiumMensal = 199.99
+    // Preços mensais fixos
+    const precoBasicoMensal = 112.49 // Preço mensal do plano básico
+    const precoPremiumMensal = 187.49 // Preço mensal do plano premium
 
-    const precoBasicoDesconto = (precoBasicoMensal * 0.8).toFixed(2)
-    const precoPremiumDesconto = (precoPremiumMensal * 0.8).toFixed(2)
-
-    precoBasico.innerHTML = `R$ ${precoBasicoDesconto}<span class='fs-6'>/mês</span>`
-    precoPremium.innerHTML = `R$ ${precoPremiumDesconto}<span class='fs-6'>/mês</span>`
+    // Atualizar preços para plano mensal
+    precoBasico.innerHTML = `R$ ${precoBasicoMensal.toFixed(2)}<span class='fs-6'>/mês</span>`
+    precoPremium.innerHTML = `R$ ${precoPremiumMensal.toFixed(2)}<span class='fs-6'>/mês</span>`
 
     // Atualizar o texto do período
     periodoBasico.innerText = 'Mensal'
@@ -107,8 +105,7 @@ btnPlanoMensal.addEventListener('click', alterarParaMensalCRM)
 //FAQ texto
 document.querySelectorAll('.faq-toggle').forEach(toggle => {
     toggle.addEventListener('click', function () {
-        
-         // Seleciona o próximo elemento `.faq-content` após o ícone clicado
+        // Seleciona o próximo elemento `.faq-content` após o ícone clicado
         const faqContent = this.nextElementSibling.nextElementSibling
 
         // Alterna a visibilidade do conteúdo
