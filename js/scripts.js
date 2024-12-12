@@ -133,16 +133,16 @@ btnPlanoMensal.addEventListener('click', alterarParaMensalCRM)
 document.querySelectorAll('.faq-item').forEach(item => {
     item.addEventListener('click', function () {
         // Seleciona o conteúdo do FAQ e o ícone da seta
-        const faqContent = this.querySelector('.faq-content');
-        const faqIcon = this.querySelector('.faq-toggle');
+        const faqContent = this.querySelector('.faq-content')
+        const faqIcon = this.querySelector('.faq-toggle')
 
         // Alterna a visibilidade do conteúdo e o ícone
         if (faqContent.style.display === 'none' || faqContent.style.display === '') {
-            faqContent.style.display = 'block';
-            faqIcon.src = './imgs/icons material/chevron-down.svg';
+            faqContent.style.display = 'block'
+            faqIcon.src = './imgs/icons material/chevron-down.svg'
         } else {
-            faqContent.style.display = 'none';
-            faqIcon.src = './imgs/icons material/chevron-right.svg';
+            faqContent.style.display = 'none'
+            faqIcon.src = './imgs/icons material/chevron-right.svg'
         }
-    });
-});
+    })
+})
