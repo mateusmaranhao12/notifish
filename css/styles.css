@@ -1,17 +1,17 @@
 body {
-    background-color: rgb(255, 239, 219);
+    background-color: #EDEBE4;
 }
 
 /*Navbar*/
 .navbar {
-    border-bottom: 1px solid gray;
-    background-color: rgb(255, 239, 219);
+    border-bottom: 1px solid #cecabc;
+    background-color: #EDEBE4;
 }
 
 .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #1abc9c;
+    color: #1ec17a;
 }
 
 .nav-link {
@@ -19,22 +19,22 @@ body {
 }
 
 .nav-link:hover {
-    color: #1abc9c;
+    color: #1ec17a;;
 }
 
 .btn-register {
     color: white;
-    background-color: #1abc9c;
+    background-color: #1ec17a;
     border: none;
 }
 
 .btn-login {
-    color: #1abc9c;
+    color: #1ec17a;;
 }
 
 .btn-login:hover {
-    border: 1px solid #1abc9c;
-    color: #1abc9c;
+    border: 1px solid #1ec17a;;
+    color: #1ec17a;;
 }
 
 .btn-register:hover {
@@ -51,12 +51,12 @@ body {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
-    color: black;
+    color: #151A1F;
 }
 
 .notificacoes-inteligentes span {
-    color: #1abc9c;
-    border-bottom: 2px solid #1abc9c;
+    color: #1ec17a;
+    border-bottom: 2px solid #1ec17a;;
 }
 
 /* Container das imagens */
@@ -71,7 +71,7 @@ body {
 
 /* Botões */
 .btn-primary {
-    background-color: #1abc9c;
+    background-color: #1ec17a;;
     border: none;
 }
 
@@ -85,7 +85,7 @@ body {
 }
 
 .btn-outline-secondary:hover {
-    background-color: #1abc9c;
+    background-color: #1ec17a;;
     color: #fff;
 }
 
@@ -95,12 +95,12 @@ body {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
-    color: black;
+    color: #151A1F;
 }
 
 .como-funciona p {
     font-size: 1.5rem;
-    color: black;
+    color: #151A1F;
 }
 
 .como-funciona span {
@@ -108,7 +108,7 @@ body {
 }
 
 .como-funciona .btn-teste-gratuito {
-    background-color: #1abc9c;
+    background-color: #1ec17a;
     color: #fff;
 }
 
@@ -133,7 +133,7 @@ p {
 .entenda-melhor h6 {
     color: white;
     display: inline-block;
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid #1ec17a;
     padding-bottom: 4px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -168,7 +168,7 @@ p {
 }
 
 .owl-theme .owl-dots .owl-dot.active span {
-    background: #00ff00;
+    background: #1ec17a;
 }
 
 /*Mais funcionalidades*/
@@ -181,7 +181,7 @@ p {
 }
 
 .mais-funcionalidades p {
-    color: black;
+    color: #151A1F;
     line-height: 1.6;
     margin-bottom: 1rem;
     text-align: justify;
@@ -190,11 +190,11 @@ p {
 
 .mais-funcionalidades h5 {
     font-weight: bold;
-    color: black;
+    color: #151A1F;
 }
 
-.mais-funcionalidades h6 {
-    color: green;
+.mais-funcionalidades img {
+    margin-bottom: 10px;
 }
 
 .mais-funcionalidades .row {
@@ -205,7 +205,7 @@ p {
 }
 
 .mais-funcionalidades .card-notifish {
-    background-color: rgb(255, 252, 245);
+    background-color: #f7f6f2;
     border-radius: 20px;
     padding: 20px;
     flex: 1 1 calc(33.333% - 20px);
@@ -234,11 +234,19 @@ p {
 /*Planos*/
 
 .planos {
-    background-color: #0b1123;
+    background-color: #172230;
+}
+
+.bg-planos {
+    background-color: #242F3E;
 }
 
 .planos .card-title, .card-subtitle, .list-unstyled, .preco {
-    color: #fff5e7;
+    color: #EDEBE4;
+}
+
+.planos .btn-light {
+    background-color: #f7f6f2;
 }
 
 .planos .text-success {
@@ -251,34 +259,34 @@ p {
 
 /*crm*/
 .crm {
-    background-color: #292929;
+    background-color: #151A1F;
 }
 
 .crm .card {
-    background-color: #000;
+    background-color: #1e2429;
 }
 
 .crm h2, p, .card-title, .card-text, h3 {
-    color: #fff5e7;
+    color: #EDEBE4;
 }
 
 /*FAQ*/
 
 .faq h1 {
-    color: black;
+    color: #151A1F;
     text-align: center;
 }
 
 .faq .colunas {
     padding: 20px;
-    border-top: 1px solid gray;
+    border-top: 1px solid #cecabc;
 }
 
 .faq .p-faq {
     border-radius: 10px;
-    background-color: #fff6ee;
+    background-color: #f7f6f2;
     padding: 10px;
-    color: black;
+    color: #151A1F;
     margin-bottom: 1rem;
     text-align: justify;
 }

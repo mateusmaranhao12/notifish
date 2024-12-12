@@ -111,12 +111,10 @@ document.querySelectorAll('.faq-toggle').forEach(toggle => {
         // Alterna a visibilidade do conteúdo
         if (faqContent.style.display === 'none' || faqContent.style.display === '') {
             faqContent.style.display = 'block'
-            this.classList.remove('fa-arrow-right')
-            this.classList.add('fa-arrow-down')
+            this.src = './imgs/icons material/chevron-down.svg'
         } else {
             faqContent.style.display = 'none'
-            this.classList.remove('fa-arrow-down')
-            this.classList.add('fa-arrow-right')
+            this.src = './imgs/icons material/chevron-right.svg'
         }
     })
 }) 
