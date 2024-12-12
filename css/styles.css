@@ -283,6 +283,10 @@ p {
     text-align: justify;
 }
 
+.faq-toggle {
+    transition: all 0.3s ease;
+}
+
 /*Footer*/
 
 footer .list-unstyled {

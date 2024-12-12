@@ -102,3 +102,24 @@ btnMensal.addEventListener('click', alterarParaMensal)
 // Adicionar eventos aos botões de plano
 btnPlanoAnual.addEventListener('click', alterarParaAnualCRM)
 btnPlanoMensal.addEventListener('click', alterarParaMensalCRM)
+
+
+//FAQ texto
+document.querySelectorAll('.faq-toggle').forEach(toggle => {
+    toggle.addEventListener('click', function () {
+        
+         // Seleciona o próximo elemento `.faq-content` após o ícone clicado
+        const faqContent = this.nextElementSibling.nextElementSibling
+
+        // Alterna a visibilidade do conteúdo
+        if (faqContent.style.display === 'none' || faqContent.style.display === '') {
+            faqContent.style.display = 'block'
+            this.classList.remove('fa-arrow-right')
+            this.classList.add('fa-arrow-down')
+        } else {
+            faqContent.style.display = 'none'
+            this.classList.remove('fa-arrow-down')
+            this.classList.add('fa-arrow-right')
+        }
+    })
+}) 
