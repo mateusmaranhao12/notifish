@@ -25,6 +25,7 @@ const periodoPremium = document.getElementById('periodo-premium')
 // Obter os botões e elementos de preço para o CRM
 const btnPlanoAnual = document.getElementById('btnPlanoAnual')
 const btnPlanoMensal = document.getElementById('btnPlanoMensal')
+const btnEconomizeCRM = document.getElementById('btnEconomizeCRM')
 
 // Obter os elementos de preço CRM
 const precoBasicoCRM = document.getElementById('precoBasicoCRM')
@@ -41,8 +42,14 @@ function alterarParaAnual() {
     periodoBasico.innerText = 'Anual'
     periodoPremium.innerText = 'Anual'
 
+    // Atualizar estilo dos botões
+    btnAnual.classList.add('btn-light')
+    btnAnual.classList.remove('btn-dark', 'text-light')
+    btnMensal.classList.add('btn-dark', 'text-light')
+    btnMensal.classList.remove('btn-light')
+
     // Remover botão Economize 20% quando no plano anual
-    btnEconomize.style.display = 'none'
+    btnEconomize.style.display = 'block'
 }
 
 // Função para alterar para o plano mensal
@@ -59,8 +66,14 @@ function alterarParaMensal() {
     periodoBasico.innerText = 'Mensal'
     periodoPremium.innerText = 'Mensal'
 
+    // Atualizar estilo dos botões
+    btnMensal.classList.add('btn-light')
+    btnMensal.classList.remove('btn-dark', 'text-light')
+    btnAnual.classList.add('btn-dark', 'text-light')
+    btnAnual.classList.remove('btn-light')
+
     // Exibir botão Economize 20%
-    btnEconomize.style.display = 'block'
+    btnEconomize.style.display = 'none'
 }
 
 // Inicializar o plano como anual ao carregar a página
@@ -73,6 +86,13 @@ function alterarParaAnualCRM() {
     precoBasicoCRM.innerHTML = "R$ 250,00<span class='fs-6'>/ano</span>"
     precoIntermediario.innerHTML = "R$ 450,00<span class='fs-6'>/ano</span>"
     precoEmpresarial.innerHTML = "R$ 710,00<span class='fs-6'>/ano</span>"
+
+    btnPlanoAnual.classList.add('btn-light')
+    btnPlanoAnual.classList.remove('btn-dark', 'text-light')
+    btnPlanoMensal.classList.add('btn-dark', 'text-light')
+    btnPlanoMensal.classList.remove('btn-light')
+
+    btnEconomizeCRM.style.display = 'block'
 }
 
 // Função para atualizar para o plano mensal
@@ -80,6 +100,13 @@ function alterarParaMensalCRM() {
     precoBasicoCRM.innerHTML = "R$ 312,50<span class='fs-6'>/mês</span>"
     precoIntermediario.innerHTML = "R$ 562,50<span class='fs-6'>/mês</span>"
     precoEmpresarial.innerHTML = "R$ 887,50<span class='fs-6'>/mês</span>"
+
+    btnPlanoMensal.classList.add('btn-light')
+    btnPlanoMensal.classList.remove('btn-dark', 'text-light')
+    btnPlanoAnual.classList.add('btn-dark', 'text-light')
+    btnPlanoAnual.classList.remove('btn-light')
+
+    btnEconomizeCRM.style.display = 'none'
 }
 
 // Definir plano inicial para Anual
